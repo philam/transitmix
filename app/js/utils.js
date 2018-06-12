@@ -13,7 +13,7 @@ app.utils.getRoute = function(latlngs, callback, context) {
   if (latlngs.via) waypoints.splice(1, 0, latlngs.via);
   waypoints = waypoints.map(flip).join(';');
 
-  var url = 'http://api.tiles.mapbox.com/v3/codeforamerica.h6mlbj75/' +
+  var url = 'https://api.mapbox.com/v4/mapbox.light' +
   'directions/driving/' + waypoints + '.json?geometry=polyline';
 
   $.getJSON(url, function(response) {
