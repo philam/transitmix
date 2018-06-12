@@ -8,7 +8,7 @@ _.templateSettings = {
 
 $(document).ready(function() {
   var options = { tileLayer: { detectRetina: true } };
-  app.leaflet = L.mapbox.map('map', 'philipdar.cjib0x8me3p2p2sni5koximsi', options);
+  app.leaflet = L.mapbox.map('map', 'mapbox.streets', options);
   
   // Feedback View that we want visible at all times
   var feedbackView = new app.FeedbackView();
