@@ -13,7 +13,7 @@ app.utils.getRoute = function(latlngs, callback, context) {
   if (latlngs.via) waypoints.splice(1, 0, latlngs.via);
   waypoints = waypoints.map(flip).join(';');
 
-  var url = 'https://api.mapbox.com/styles/v1/philipdar/cjib0x8me3p2p2sni5koximsi/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicGhpbGlwZGFyIiwiYSI6ImNqZmx1N2wzbTBva2ozM21rbnFjN21uZDgifQ.tK-myvugjB-kOzfpAFB0DA' +
+  var url = 'http://api.mapbox.com/v4/mapbox.streets.html?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NDg1bDA1cjYzM280NHJ5NzlvNDMifQ.d6e-nNyBDtmQCVwVNivz7A#3/0.00/0.00' +
   'directions/driving/' + waypoints + '.json?geometry=polyline';
 
   $.getJSON(url, function(response) {
