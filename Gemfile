@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.6'
+ruby '2.3.7'
 
 gem 'dedent'
 gem 'dotenv'
