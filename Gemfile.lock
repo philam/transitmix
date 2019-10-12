@@ -54,7 +54,7 @@ GEM
       rake
     jasmine-core (2.0.0)
     jsmin (1.0.1)
-    json (1.8.1)
+    json (1.8.3)
     kgio (2.9.2)
     minitest (5.3.3)
     multi_json (1.9.3)
